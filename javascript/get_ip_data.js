@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // Get IP data
-    $.getJSON("http://ip-api.com/json/?callback=?", function(data){
+    $.getJSON("http://ip-api.com/json/?", function(data){
         $("#country").text(data.country);
         $("#country-code").text(data.countryCode);
         $("#region").text(data.regionName);
@@ -12,5 +12,5 @@ $(document).ready(function(){
         $("#lon").text(data.lon);
         $("#query").text(data.query);
     });
-    
+
 });
